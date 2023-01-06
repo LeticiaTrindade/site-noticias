@@ -1,0 +1,13 @@
+.pagination{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#loadMoreButton{
+    width: 25%;
+    border: none;
+    border-radius: 2rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}

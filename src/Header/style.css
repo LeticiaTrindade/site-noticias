@@ -1,0 +1,92 @@
+.nav {
+  flex-direction: row;
+  padding: 1rem 10rem;
+  align-items: center;
+  background-color: rgb(29, 17, 87);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+
+.logo {
+  padding: 0;
+  margin: 0;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.logo:hover {
+  color: rgb(222, 221, 228);
+}
+
+
+
+.item {
+  text-decoration: none;
+  color: white;
+  margin: 0rem 1rem;
+  padding: 0;
+  max-height: 2.5rem;
+}
+
+.item:hover {
+  color: rgb(222, 221, 228);
+}
+
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  border: none;
+  margin: 0;
+
+}
+
+.my-toggle {
+  border: none;
+  background-color: rgba(255, 255, 255, 0);
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
+.my-btn {
+
+  background-color: white !important;
+  margin-left: 0 !important;
+  width: 3rem;
+  min-width: 30px;
+  height: auto;
+  border: none;
+  background: url(http://www.devmedia.com.br/imagens/2013/buscar_grey.png) no-repeat;
+  background-position: center;
+  border-top-left-radius: 0;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  border-bottom-left-radius: 0;
+
+
+}
+
+.my-input-text {
+  border-bottom-left-radius: 1rem !important;
+  border-top-left-radius: 1rem !important;
+  height: 70%;
+  border: none;
+  border-right: 0;
+  margin-right: 0;
+  padding: 0.3rem;
+  padding-left: 1rem;
+  font-size: 0.8rem;
+  
+
+}
+
+.my-input-group {
+  width: 40%;
+}
