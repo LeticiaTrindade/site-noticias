@@ -1,7 +1,9 @@
 .nav {
+  display: flex;
   flex-direction: row;
+  justify-content: space-between;
   padding: 1rem 10rem;
-  align-items: center;
+  align-items:center;
   background-color: rgb(29, 17, 87);
   position: fixed;
   width: 100%;
@@ -9,51 +11,46 @@
   left: 0;
 }
 
+.responsive{
+  display: none;
+}
+
 
 .logo {
-  padding: 0;
-  margin: 0;
+  margin-bottom: 0 !important;
   font-size: 1.5rem;
   color: white;
+  text-decoration: none;
 }
 
 .logo:hover {
   color: rgb(222, 221, 228);
 }
 
-
-
-.item {
-  text-decoration: none;
-  color: white;
-  margin: 0rem 1rem;
-  padding: 0;
-  max-height: 2.5rem;
-}
-
-.item:hover {
-  color: rgb(222, 221, 228);
-}
-
-
-.menu {
+.itens{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: baseline;
-  border: none;
-  margin: 0;
-
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 0;
+}
+.item {
+  color: white;
+  max-height: 2.5rem;
 }
 
-.my-toggle {
-  border: none;
-  background-color: rgba(255, 255, 255, 0);
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-  background-repeat: no-repeat;
-  height: 2.5rem;
-  width: 2.5rem;
+
+.link:hover {
+  color: rgb(222, 221, 228);
 }
+
+.link{
+  text-decoration: none;
+  color: white;
+}
+
+
 
 .my-btn {
 
@@ -89,4 +86,77 @@
 
 .my-input-group {
   width: 40%;
+  
+ 
 }
+
+
+
+@media screen and (max-width: 760px) {
+
+  .no-responsive{
+    display: none;
+  }
+
+  .responsive{
+    display: contents;
+  }
+
+
+  .my-toggle {
+    border: none;
+    border-radius: 0.5rem;
+    background-color: rgba(255, 255, 255, 0);
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    height: 2.5rem;
+    width: 2.5rem;
+
+  
+  }
+  
+  div .link {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    padding: 15px;
+    display:inline-block;
+  }
+  ul {
+    display: inline;
+    margin: 0;
+    padding: 0;
+  }
+  ul .item {display: inline-block;}
+  ul .item:hover {background: rgb(109, 17, 17,0);}
+  ul .item:hover ul {display: block;}
+  ul .item ul {
+    position: absolute;
+    width: auto;
+    display: none;
+  }
+  ul .item ul li { 
+    background: rgb(29, 17, 87); 
+    display: block; 
+    
+  }
+  ul .item ul li a {display:block !important;} 
+  ul .item ul li:hover {background: rgb(222, 221, 228);}
+  ul .item ul li:hover a:hover{color: black;}
+  .my-input-text{
+    font-size: 10px;
+    margin-right: 0;
+  }
+  
+  .my-input-group{
+    width: auto;
+  }
+  .divli{
+    padding: 1rem 0rem;
+  }
+  
+  
+
+
+}
+
